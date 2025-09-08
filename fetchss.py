@@ -8,7 +8,7 @@ from email.message import EmailMessage
 
 # --- Configuration ---
 API_KEY = os.environ.get('API_KEY')
-QUALITY_THRESHOLD = 0.1 # Set your desired quality threshold here
+QUALITY_THRESHOLD = 0.3 # Set your desired quality threshold here
 
 # List of locations and recipients. Add or remove friends here!
 LOCATIONS = [
@@ -60,7 +60,7 @@ def find_high_quality_sunsets(data, timezone):
     good_sunsets_details = []
 
     for forecast in data['data']:
-        if forecast['type'] == 'sunset' and forecast['quality'] >= QUALITY_THRESHOLD:
+        if forecast.get('type') == 'sunset' and forecast.get('quality', 0.0) >= QUALITY_THRESHOLD:
             # Helper function to convert UTC iso strings to local time strings
             def format_local_time(iso_str, fmt):
                 utc_dt = datetime.fromisoformat(iso_str.replace('Z', '+00:00'))
