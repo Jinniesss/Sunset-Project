@@ -1,0 +1,127 @@
+{
+    "time": "2025-09-08T21:16:23.599Z",
+    "location": {
+        "latitude": 41,
+        "longitude": -73
+    },
+    "grid_location": {
+        "latitude": 41,
+        "longitude": -73
+    },
+    "data": [
+        {
+            "type": "sunrise",
+            "model_data": true,
+            "quality": 0.15,
+            "cloud_cover": 0.56,
+            "quality_text": "Poor",
+            "time": "2025-09-08T10:24:00.000Z",
+            "direction": 81.3,
+            "magics": {
+                "blue_hour": [
+                    "2025-09-08T09:48:00.000Z",
+                    "2025-09-08T10:01:00.000Z"
+                ],
+                "golden_hour": [
+                    "2025-09-08T10:07:00.000Z",
+                    "2025-09-08T10:38:00.000Z"
+                ]
+            }
+        },
+        {
+            "type": "sunset",
+            "model_data": true,
+            "quality": 0.28,
+            "cloud_cover": 0.12,
+            "quality_text": "Fair",
+            "time": "2025-09-08T23:15:00.000Z",
+            "direction": 278.7,
+            "magics": {
+                "blue_hour": [
+                    "2025-09-08T23:38:00.000Z",
+                    "2025-09-08T23:50:00.000Z"
+                ],
+                "golden_hour": [
+                    "2025-09-08T23:01:00.000Z",
+                    "2025-09-08T23:32:00.000Z"
+                ]
+            }
+        },
+        {
+            "type": "sunrise",
+            "model_data": true,
+            "quality": 0.28,
+            "cloud_cover": 0.16,
+            "quality_text": "Fair",
+            "time": "2025-09-09T10:25:00.000Z",
+            "direction": 81.8,
+            "magics": {
+                "blue_hour": [
+                    "2025-09-09T09:49:00.000Z",
+                    "2025-09-09T10:02:00.000Z"
+                ],
+                "golden_hour": [
+                    "2025-09-09T10:08:00.000Z",
+                    "2025-09-09T10:39:00.000Z"
+                ]
+            }
+        },
+        {
+            "type": "sunset",
+            "model_data": true,
+            "quality": 0.35,
+            "cloud_cover": 0.16,
+            "quality_text": "Fair",
+            "time": "2025-09-09T23:13:00.000Z",
+            "direction": 278.2,
+            "magics": {
+                "blue_hour": [
+                    "2025-09-09T23:36:00.000Z",
+                    "2025-09-09T23:49:00.000Z"
+                ],
+                "golden_hour": [
+                    "2025-09-09T22:59:00.000Z",
+                    "2025-09-09T23:30:00.000Z"
+                ]
+            }
+        },
+        {
+            "type": "sunrise",
+            "model_data": true,
+            "quality": 0.14,
+            "cloud_cover": 0.2,
+            "quality_text": "Poor",
+            "time": "2025-09-10T10:26:00.000Z",
+            "direction": 82.3,
+            "magics": {
+                "blue_hour": [
+                    "2025-09-10T09:51:00.000Z",
+                    "2025-09-10T10:03:00.000Z"
+                ],
+                "golden_hour": [
+                    "2025-09-10T10:09:00.000Z",
+                    "2025-09-10T10:40:00.000Z"
+                ]
+            }
+        },
+        {
+            "type": "sunset",
+            "model_data": true,
+            "quality": 0.43,
+            "cloud_cover": 0.24,
+            "quality_text": "Good",
+            "time": "2025-09-10T23:11:00.000Z",
+            "direction": 277.7,
+            "magics": {
+                "blue_hour": [
+                    "2025-09-10T23:34:00.000Z",
+                    "2025-09-10T23:47:00.000Z"
+                ],
+                "golden_hour": [
+                    "2025-09-10T22:58:00.000Z",
+                    "2025-09-10T23:28:00.000Z"
+                ]
+            }
+        }
+    ]
+}
