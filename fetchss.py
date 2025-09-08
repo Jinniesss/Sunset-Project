@@ -54,28 +54,36 @@ def find_high_quality_sunsets(data):
             direction = forecast['direction']
             
             golden_hour_start = format_local_time(forecast['magics']['golden_hour'][0], '%-I:%M %p')
-            golden_hour_end = format_local_time(forecast['magics']['golden_hour'][1], '%-I:%M %p %Z') # Add TZ to last time
+            golden_hour_end = format_local_time(forecast['magics']['golden_hour'][1], '%-I:%M %p') 
             
             blue_hour_start = format_local_time(forecast['magics']['blue_hour'][0], '%-I:%M %p')
-            blue_hour_end = format_local_time(forecast['magics']['blue_hour'][1], '%-I:%M %p %Z')
+            blue_hour_end = format_local_time(forecast['magics']['blue_hour'][1], '%-I:%M %p')
 
             # --- Building the text block for this sunset ---
             details = f"""
-====================================
-HIGH-QUALITY SUNSET FORECAST
-====================================
+☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️
+当当当当！有好看的日落！
+☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️
 
-Date: {date_str}
-Time: {time_str}
-Quality: {quality_text} (Score: {quality_score:.2f})
-Cloud Cover: {cloud_cover}%
-Direction: {direction}°
+日期: {date_str}
+日落时间: {time_str}
+预测好看程度: {quality_text} (分数: {quality_score:.2f})
+云覆盖率: {cloud_cover}%
+太阳方向: {direction}°
 
-Magic Hours:
-  - Golden Hour: {golden_hour_start} to {golden_hour_end}
-  - Blue Hour:   {blue_hour_start} to {blue_hour_end}
+详细时间:
+  - 💛Golden Hour: {golden_hour_start} - {golden_hour_end}
+  - 💙Blue Hour:   {blue_hour_start} - {blue_hour_end}
+
+
 """
             good_sunsets_details.append(details)
+            end = """
+有时间去看看吧嘻嘻! 🌅🌇🌄
+
+From 你的去去😚
+"""
+            good_sunsets_details.append(end)
             
     return good_sunsets_details
 
@@ -114,6 +122,6 @@ if __name__ == "__main__":
             full_message = "\n".join(high_quality_sunsets)
             print("High-quality sunset found. Sending notification...")
             print(full_message)
-            send_email_notification("🌅 Beautiful Sunset Alert!!", full_message)
+            send_email_notification("🌅 去去检测到好看的日落!!", full_message)
         else:
             print("No high-quality sunsets predicted. No email will be sent.")
