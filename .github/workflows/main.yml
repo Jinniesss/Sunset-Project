@@ -2,10 +2,10 @@ name: Daily Sunset Check
 
 on:
   schedule:
-    # Runs at 10:00 AM New Haven time (14:00 UTC during EDT)
-    - cron: '0 14 * * *'
+    # Runs at 8:00 AM New Haven time (12:00 UTC during EDT)
+    - cron: '0 12 * * *'
     # Runs at 6:30 PM New Haven time (22:30 UTC during EDT)
-    - cron: '30 22 * * *'
+    # - cron: '30 22 * * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
