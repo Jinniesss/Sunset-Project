@@ -11,7 +11,7 @@ from email.message import EmailMessage
 LATITUDE = '41'
 LONGITUDE = '-73'
 API_KEY = os.environ.get('API_KEY')
-QUALITY_THRESHOLD = 0.30
+QUALITY_THRESHOLD = 0.75
 RECIPIENT_EMAIL = "isstgml@gmail.com" # Define recipient email here
 
 # --- Function to fetch data ---
@@ -62,7 +62,7 @@ def find_high_quality_sunsets(data):
             # --- Building the text block for this sunset ---
             details = f"""
 ☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️
-当当当当！有好看的日落！
+当当当当！马上有好看的日落！
 ☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️
 
 日期: {date_str}
@@ -78,12 +78,12 @@ def find_high_quality_sunsets(data):
 
 """
             good_sunsets_details.append(details)
-            end = """
+    end = """
 有时间去看看吧嘻嘻! 🌅🌇🌄
 
 From 你的去去😚
 """
-            good_sunsets_details.append(end)
+    good_sunsets_details.append(end)
             
     return good_sunsets_details
 
