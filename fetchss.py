@@ -57,10 +57,8 @@ def find_high_quality_sunsets(data, timezone):
         return [] # Return an empty list
         
     local_tz = ZoneInfo(timezone)
-    opening = f"""
+    good_sunsets_details = []
 
-    🥰🥰🥰泥好呀{data['location']['name']}~🥰🥰🥰"""
-    good_sunsets_details = [opening]
     for forecast in data['data']:
         if forecast['type'] == 'sunset' and forecast['quality'] >= QUALITY_THRESHOLD:
             # Helper function to convert UTC iso strings to local time strings
@@ -132,7 +130,9 @@ if __name__ == "__main__":
             high_quality_sunsets = find_high_quality_sunsets(forecast_data, location['timezone'])
         
             if high_quality_sunsets:
-                # Add a closing message to the list of sunsets
+                opening_message = f"🥰泥好呀{location['name']}🥰\n"
+                
+                high_quality_sunsets.insert(0, opening_message)
                 closing_message = "\n有时间去看看吧嘻嘻! 🌅🌇🌄\n\nFrom 你的去去😚"
                 high_quality_sunsets.append(closing_message)
 
