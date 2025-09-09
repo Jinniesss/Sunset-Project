@@ -8,7 +8,7 @@ from email.message import EmailMessage
 
 # --- Configuration ---
 API_KEY = os.environ.get('API_KEY')
-QUALITY_THRESHOLD = 0.3 # Set your desired quality threshold here
+QUALITY_THRESHOLD = 0.75 # Set your desired quality threshold here
 
 # List of locations and recipients. Add or remove friends here!
 LOCATIONS = [
@@ -25,16 +25,16 @@ LOCATIONS = [
         "latitude": "31.2304",
         "longitude": "121.4737",
         "timezone": "Asia/Shanghai",
-        "recipient_email": "isstgml@gmail.com", # Change to their email
+        "recipient_email": "wuqzh@shanghaitech.edu.cn", # Change to their email
         "place": "上海"
-    },
-    {
-        "name": "dd",
-        "latitude": "30.2672",
-        "longitude": "-97.7431",
-        "timezone": "America/Chicago",
-        "recipient_email": "isstgml@gmail.com", # Change to their email
-        "place": "Austin"
+    # },
+    # {
+    #     "name": "dd",
+    #     "latitude": "30.2672",
+    #     "longitude": "-97.7431",
+    #     "timezone": "America/Chicago",
+    #     "recipient_email": "isstgml@gmail.com", # Change to their email
+    #     "place": "Austin"
     }
 ]
 
