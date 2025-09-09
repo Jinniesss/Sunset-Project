@@ -8,7 +8,7 @@ from email.message import EmailMessage
 
 # --- Configuration ---
 API_KEY = os.environ.get('API_KEY')
-QUALITY_THRESHOLD = 0.4 # Set your desired quality threshold here
+QUALITY_THRESHOLD = 0.3 # Set your desired quality threshold here
 
 # List of locations and recipients. Add or remove friends here!
 LOCATIONS = [
