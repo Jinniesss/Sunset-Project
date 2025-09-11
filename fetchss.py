@@ -8,7 +8,7 @@ from email.message import EmailMessage
 
 # --- Configuration ---
 API_KEY = os.environ.get('API_KEY')
-QUALITY_THRESHOLD = 0.75 # Set your desired quality threshold here
+QUALITY_THRESHOLD = 0.70 # Set your desired quality threshold here
 
 # List of locations and recipients. Add or remove friends here!
 LOCATIONS = [
@@ -27,14 +27,14 @@ LOCATIONS = [
         "timezone": "Asia/Shanghai",
         "recipient_email": "wuqzh@shanghaitech.edu.cn", # Change to their email
         "place": "上海"
-    # },
-    # {
-    #     "name": "dd",
-    #     "latitude": "30.2672",
-    #     "longitude": "-97.7431",
-    #     "timezone": "America/Chicago",
-    #     "recipient_email": "isstgml@gmail.com", # Change to their email
-    #     "place": "Austin"
+    },
+    {
+        "name": "dd",
+        "latitude": "30.2672",
+        "longitude": "-97.7431",
+        "timezone": "America/Chicago",
+        "recipient_email": "dinghan@utexas.edu", # Change to their email
+        "place": "Austin"
     }
 ]
 
@@ -133,7 +133,7 @@ if __name__ == "__main__":
                 opening_message = f"🥰泥好呀{location['name']}🥰\n"
                 
                 high_quality_sunsets.insert(0, opening_message)
-                closing_message = "\n有时间去看看吧嘻嘻! 🌅🌇🌄\n\nFrom 你的去去😚"
+                closing_message = "\n有时间去看看吧嘻嘻! 🌅🌇🌄\n\nFrom 去去🌻"
                 high_quality_sunsets.append(closing_message)
 
                 full_message = "\n".join(high_quality_sunsets)
